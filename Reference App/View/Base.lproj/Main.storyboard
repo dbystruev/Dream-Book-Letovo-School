@@ -42,7 +42,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ElD-2V-UUw" kind="show" id="Sj8-Bn-42j"/>
+                                    <segue destination="ElD-2V-UUw" kind="show" identifier="ItemSegue" id="Sj8-Bn-42j"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="742" y="239"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Reference Item View Controller-->
         <scene sceneID="Ilc-nd-oAn">
             <objects>
-                <tableViewController id="ElD-2V-UUw" sceneMemberID="viewController">
+                <tableViewController id="ElD-2V-UUw" customClass="ReferenceItemViewController" customModule="Reference_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="UrT-tv-bH9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pgW-qM-Ul9">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snake" translatesAutoresizingMaskIntoConstraints="NO" id="pgW-qM-Ul9">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
                                                 </imageView>
                                             </subviews>
@@ -147,6 +147,11 @@
                             <outlet property="delegate" destination="ElD-2V-UUw" id="YIR-kI-RmR"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="contentLabel" destination="S9c-vY-6RA" id="Mbh-vt-fHF"/>
+                        <outlet property="imageView" destination="pgW-qM-Ul9" id="f3f-hX-fhP"/>
+                        <outlet property="nameLabel" destination="H0i-uw-gyC" id="Ts2-gu-5rC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MN-IH-o8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,4 +174,7 @@
             <point key="canvasLocation" x="-210" y="239"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="snake" width="341" height="341"/>
+    </resources>
 </document>

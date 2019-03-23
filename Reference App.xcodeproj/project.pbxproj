@@ -12,6 +12,7 @@
 		69259EBC222AB16800AD8ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69259EBB222AB16800AD8ED7 /* Assets.xcassets */; };
 		69259EBF222AB16800AD8ED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69259EBD222AB16800AD8ED7 /* LaunchScreen.storyboard */; };
 		69259EC7222AB62700AD8ED7 /* ReferenceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69259EC6222AB62700AD8ED7 /* ReferenceTableViewController.swift */; };
+		6940FF2622465CB10054DB49 /* ReferenceItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940FF2522465CB10054DB49 /* ReferenceItemViewController.swift */; };
 		69E2A27C2233E7D60009125B /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2A27B2233E7D60009125B /* Dream.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		69259EBE222AB16800AD8ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69259EC0222AB16800AD8ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69259EC6222AB62700AD8ED7 /* ReferenceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceTableViewController.swift; sourceTree = "<group>"; };
+		6940FF2522465CB10054DB49 /* ReferenceItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceItemViewController.swift; sourceTree = "<group>"; };
 		69E2A27B2233E7D60009125B /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				69259EC6222AB62700AD8ED7 /* ReferenceTableViewController.swift */,
+				6940FF2522465CB10054DB49 /* ReferenceItemViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				69259EB5222AB16500AD8ED7 /* AppDelegate.swift in Sources */,
 				69259EC7222AB62700AD8ED7 /* ReferenceTableViewController.swift in Sources */,
 				69E2A27C2233E7D60009125B /* Dream.swift in Sources */,
+				6940FF2622465CB10054DB49 /* ReferenceItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
